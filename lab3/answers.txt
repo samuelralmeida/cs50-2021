@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: sort1 is faster than sort3 in the best cenario (50,000 sorted numbers), probably because there isn't any swap to do
+
+sort2 uses: merge sort
+
+How do you know?: Because it's the best algorithm in the worst cenario: sort 50,000 random numbers
+
+sort3 uses: selection sort
+
+How do you know?: Because there isn't significant difference to solve 50,000 sorted numbers or 50,000 reversed numbers

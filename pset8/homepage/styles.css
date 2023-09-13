@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+}
+
+header {
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+main {
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+h1, h4 {
+    color: #3c5fac;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #3c5fac;
+    padding-bottom: 40px;
+
+}
+
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.contact {
+    width: 40%;
+    display: inline-block;
+    color: white;
+}
+
+.list-group-item {
+    color: #123f6d;
+    border: 0;
+}
+
+.card {
+    border: 0;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.text-muted {
+    color: #212529!important;
+}
+
+.fundo {
+    background-color: black;
+    font-size: 20px;
+    padding: 16.54px;
+}
+
+.content {
+    display: inline-block;
+}
+
+.links {
+    color: #e3db57;
+    text-decoration: none;
+}
+
+#profile {
+    padding: 16px;
+    width: 95%;
+    margin: auto;
+    color: white;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.description {
+    margin: 0;
+}
+
+.tool {
+    font-weight: bold;
+}
+
+.trivia {
+    text-align: left;
+    color: white;
+}

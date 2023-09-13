@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            function checkAnswer1() {
+                if (this.id === "answer2"){
+                    this.style.backgroundColor = "green"
+                    this.innerHTML = "Correct!"
+                    return
+                }
+                this.style.backgroundColor = "red"
+                this.innerHTML = "Incorrect!"
+            }
+
+            function checkAnswer2() {
+                let input = document.querySelector("input");
+                if (input.value === "Vatican" || input.value === "vatican" || input.value === "VATICAN"){
+                    this.style.background = "green"
+                    this.innerHTML = "Correct!"
+                    return
+                }
+                this.style.background = "red"
+                this.innerHTML = "Incorrect!"
+            }
+
+
+            function listen(){
+                // first question
+                document.querySelector("#answer1").addEventListener('click', checkAnswer1)
+                document.querySelector("#answer2").addEventListener('click', checkAnswer1)
+                document.querySelector("#answer3").addEventListener('click', checkAnswer1)
+
+                //second question
+                document.querySelector("#check").addEventListener('click', checkAnswer2)
+            }
+
+            document.addEventListener('DOMContentLoaded', listen)
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the largest river by discharge in the world?</h3>
+                <div>
+                    <button type="button" id="answer1">Nilo (Egypt)</button>
+                    <button type="button" id="answer2">Amazon (Brazil)</button>
+                    <button type="button" id="answer3">Colorado (EUA)</button>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>What is the smallest country in the world?</h3>
+                <input type="text" name="answer"></input>
+                <button id="check">Check answer</button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
